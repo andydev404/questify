@@ -11,7 +11,7 @@ app.listen(variables.PORT, err => {
   if (err) throw err;
   console.log(`
   Server running on port: ${variables.PORT}
-  ------
+  -----
   Enviroment: ${process.env.NODE_ENV}
   `);
 });
