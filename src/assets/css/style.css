@@ -1,0 +1,27 @@
+/*
+  Yellow: #FBBA42
+  White: #FEFEFE
+  Black: #343a40
+*/
+body{
+  color: #343a40;
+}
+.navbar-brand, .nav-item .nav-link{
+  color: #343a40;
+}
+.nav-item .nav-link{
+  font-weight: bold;
+}
+.header-home{
+  background: #fff;
+  height: 700px;
+  position: relative;
+  overflow: hidden;
+}
+.shape1{
+  max-width: 400px;
+  position: absolute;
+  top: 0;
+  opacity: 0.5;
+  left: 0;
+}
