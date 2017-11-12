@@ -15,7 +15,16 @@ function getEnv(env) {
   return MongoConfig[env];
 }
 
+function checkAuthentication(req, res, next) {
+  if (req.isAuthenticated()) {
+    next();
+  } else {
+    res.redirect('/');
+  }
+}
+
 export default {
   ...defaultConfig,
   ...getEnv(process.env.NODE_ENV),
+  checkAuthentication,
 };
